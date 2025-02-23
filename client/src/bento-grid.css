@@ -1,0 +1,97 @@
+:root {
+  --spacing: 1em;
+}
+
+
+.bento-grid
+{
+  --height: calc(100vh - (2*var(--spacing)));
+  --width: calc(100vw - (2*var(--spacing)));
+
+  width: var(--width);
+  height: var(--height); 
+
+  margin: var(--spacing);
+
+  display: grid;
+
+  grid-gap: var(--spacing);
+}
+
+.box 
+{
+  position: relative;
+  border-radius: 14px;
+  box-shadow: 0px 7px 10px 0 black;
+  transition: transform 250ms, box-shadow 250ms;
+}
+
+.box:hover
+{
+  transform: translateY(-7px);
+  cursor: pointer;
+  box-shadow: 0px 14px 10px 0 black;
+}
+
+#one 
+{
+  grid-row-start: 1;
+  grid-row-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: red;
+}
+
+#two
+{
+  background-color: green;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#three
+{
+  background-color: blue;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+#four
+{
+  background-color: cyan;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+#five
+{
+  background-color: pink;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+
+#six
+{
+  background-color: purple;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
+
+#seven
+{
+  background-color: lightgreen;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
