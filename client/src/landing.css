@@ -1,0 +1,60 @@
+.landing
+{
+  height: 100dvh;
+  width: 100dvw;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 9;
+
+  overflow: hidden;
+}
+
+.landing-content
+{
+  height: 100%;
+  width: 100%;
+
+  background-color: rgba(0, 100, 100, 1);
+
+  position: absolute;
+}
+
+.landing.is-close
+{
+  top : -100dvh;
+  animation-name: close;
+  animation-duration: 1s;
+
+}
+
+.landing.is-open
+{
+  animation-name: open;
+  animation-duration: 1s;
+}
+
+@keyframes close {
+  from {
+    top: calc(0dvh);
+    display: block;
+  }
+
+  to {
+    top: calc(-100dvh);
+    display: none;
+  }
+}
+
+@keyframes open {
+  from {
+    top: calc(-100dvh);
+    display: block;
+  }
+
+  to {
+    top: calc(0dvh);
+  }
+}
