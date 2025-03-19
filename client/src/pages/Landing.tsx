@@ -1,5 +1,4 @@
-import './landing.css';
-import './bento-grid.css';
+import './Landing.scss';
 
 export default function Landing() {
 
