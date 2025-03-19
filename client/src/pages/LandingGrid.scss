@@ -1,10 +1,10 @@
 :root {
-  --spacing: 1em;
+  --spacing: 1rem;
 }
 
 .landing .bento-grid {
   --height: calc(100vh - (2*var(--spacing)));
-  --width: calc(100vw - (2*var(--spacing)));
+  --width: 60vw;
 
   width: var(--width);
   height: var(--height);
@@ -20,6 +20,10 @@
     border-radius: 14px;
     box-shadow: 0px 7px 10px 0 black;
     transition: transform 250ms, box-shadow 250ms;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .box:hover {
@@ -33,7 +37,7 @@
     grid-row-end: 5;
     grid-column-start: 3;
     grid-column-end: 4;
-    background-color: red;
+    background-image: url('/assets/image_6.jpg');
   }
 
   #two {
@@ -42,6 +46,7 @@
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 3;
+    background-image: url('/assets/image_4.jpg');
   }
 
   #three {
@@ -50,6 +55,7 @@
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 5;
+    background-image: url('/assets/image_12.jpg');
   }
 
   #four {
@@ -58,6 +64,7 @@
     grid-column-end: 4;
     grid-row-start: 5;
     grid-row-end: 7;
+    background-image: url('/assets/image_2.jpg');
   }
 
   #five {
@@ -66,6 +73,7 @@
     grid-column-end: 2;
     grid-row-start: 5;
     grid-row-end: 9;
+    background-image: url('/assets/image_14.jpg');
   }
 
   #six {
@@ -74,6 +82,7 @@
     grid-column-end: 3;
     grid-row-start: 7;
     grid-row-end: 9;
+    background-image: url('/assets/image_21.jpg');
   }
 
   #seven {
@@ -82,5 +91,6 @@
     grid-column-end: 4;
     grid-row-start: 7;
     grid-row-end: 9;
+    background-image: url('/assets/image_32.jpg');
   }
 }

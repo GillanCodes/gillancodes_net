@@ -19,6 +19,9 @@
     background-color: rgba(0, 100, 100, 1);
 
     position: absolute;
+
+    display: flex;
+    justify-content: center;
   }
 
   &.is-close {
