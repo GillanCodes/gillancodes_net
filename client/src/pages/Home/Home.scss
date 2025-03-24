@@ -1,0 +1,21 @@
+#home
+{
+  &.container
+  {
+    width: 100vw;
+    min-height: 100vh;
+
+    section.section
+    {
+      background-color: red;
+      min-height: 30vh;
+      overflow: hidden;
+
+      &:nth-child(even)
+      {
+        background-color: blue;
+      }
+    }
+
+  }
+}

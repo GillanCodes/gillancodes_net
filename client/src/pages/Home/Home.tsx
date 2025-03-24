@@ -1,12 +1,23 @@
-import React from 'react'
 import NavOpen from '../../components/NavOpen/NavOpen'
+import "./Home.scss";
 
 export default function Home() {
   return (
-    <div>
-      Home
+    <main className='container' id='home'>
       <NavOpen />
 
-    </div>
+      <section className='section'>
+      </section>
+
+      <section className='section'>
+      </section>
+
+      <section className='section'>
+      </section>
+
+      <section className='section'>
+      </section>
+
+    </main>
   )
 }
