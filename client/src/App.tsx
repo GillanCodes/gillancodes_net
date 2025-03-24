@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Routes from "./router/index";
+import "./styles/index.scss";
 
 
 function App() {
