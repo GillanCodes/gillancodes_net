@@ -24,6 +24,18 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 24px;
+      padding: 5px;
+      border-radius: 7px;
+      background-color: rgba($color: #000000, $alpha: .6);
+      color: white;
+    }
   }
 
   .box:hover {
@@ -37,7 +49,7 @@
     grid-row-end: 5;
     grid-column-start: 3;
     grid-column-end: 4;
-    background-image: url('/assets/image_6.jpg');
+    background-image: url('/assets/image_97.jpg');
   }
 
   #two {
@@ -82,7 +94,7 @@
     grid-column-end: 3;
     grid-row-start: 7;
     grid-row-end: 9;
-    background-image: url('/assets/image_21.jpg');
+    background-image: url('/assets/image_104.jpg');
   }
 
   #seven {

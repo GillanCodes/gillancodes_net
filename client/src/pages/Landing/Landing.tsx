@@ -14,13 +14,27 @@ export default function Landing() {
     <div className="landing" id="landing">
       <div className="landing-content">
         <div className="bento-grid">
-          <div className="box" id="one" onClick={() => close('/about')}></div>
-          <div className="box" id="two" onClick={() => close('/')}></div>
-          <div className="box" id="three"></div>
-          <div className="box" id="four"></div>
-          <div className="box" id="five"></div>
-          <div className="box" id="six"></div>
-          <div className="box" id="seven"></div>
+          <div className="box" id="one" onClick={() => close('/about')}>
+            <p>About</p>
+          </div>
+          <div className="box" id="two" onClick={() => close('/')}>
+            <p>Home</p>
+          </div>
+          <div className="box" id="three">
+            <p>Text</p>
+          </div>
+          <div className="box" id="four">
+            <p>Text</p>
+          </div>
+          <div className="box" id="five">
+            <p>Text</p>
+          </div>
+          <div className="box" id="six">
+            <p>Text</p>
+          </div>
+          <div className="box" id="seven">
+            <p>Text</p>
+          </div>
         </div>
       </div>
     </div>
