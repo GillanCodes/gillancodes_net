@@ -1,20 +1,53 @@
-#home
-{
-  &.container
-  {
+@use "../../styles/themes.scss";
+
+#home {
+  &.container {
     width: 100vw;
     min-height: 100vh;
 
-    section.section
-    {
-      background-color: red;
+    section.section {
+      background-color: var(--main-color);
       min-height: 30vh;
       overflow: hidden;
 
-      &:nth-child(even)
-      {
-        background-color: blue;
+      &:nth-child(even) {
+        background-color: var(--sub-color);
       }
+
+
+      &.home {
+
+        display: flex;
+        justify-content: space-around;
+
+        .home {
+          &__title {
+            font-size: 24px;
+            margin: 10px;
+            width: 50vw;
+
+            span.highlight {
+              background-color: var(--bg-color);
+              color: var(--text-color);
+              border-radius: 7px;
+              padding: 5px;
+              display: inline-block;
+            }
+          }
+
+          &__image {
+            width: 50vw;
+            height: 500px;
+
+            img {
+              width: 500px;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+
     }
 
   }
