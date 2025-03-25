@@ -26,6 +26,10 @@
             margin: 10px;
             width: 50vw;
 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             span.highlight {
               background-color: var(--bg-color);
               color: var(--text-color);
