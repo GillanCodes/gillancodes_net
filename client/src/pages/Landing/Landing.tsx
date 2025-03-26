@@ -45,8 +45,8 @@ export default function Landing() {
           <div className="box" id="two" onClick={() => switchState('/')}>
             <p>Home</p>
           </div>
-          <div className="box" id="three">
-            <p>Text</p>
+          <div className="box" id="three" onClick={() => switchState('/blog')}>
+            <p>Blog</p>
           </div>
           <div className="box" id="four">
             <p>Text</p>
