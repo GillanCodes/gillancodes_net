@@ -3,23 +3,26 @@ import './Landing.scss';
 import { useEffect } from 'react';
 
 export default function Landing() {
-  
+
   const navigate = useNavigate();
 
   const switchState = (link?: string) => {
     var state = document.getElementById('landing');
     if (!state) return;
 
-    if (link) navigate(link); 
+    if (!state.className.includes('is-close'))
+      state.className = "landing is-close";
+    else
+      state.className = "landing is-open";
 
-    if (!state.className.includes('is-close')) return state.className = "landing is-close";
-    else return state.className = "landing is-open";
+    if (!link) return;
+    navigate(link);
   }
 
+
   useEffect(() => {
-    const keyDownHandler = (event:KeyboardEvent) => {
-      switch (event.key)
-      {
+    const keyDownHandler = (event: KeyboardEvent) => {
+      switch (event.key) {
         case "Escape":
           return switchState();
         default:
